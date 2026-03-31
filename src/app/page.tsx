@@ -84,9 +84,7 @@ export default function Home() {
             >
               <RefreshCw className="w-6 h-6" />
             </button>
-            <button className="flex items-center gap-2 bg-white border border-gray-200 px-4 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:bg-gray-50 transition-colors shadow-sm cursor-pointer">
-              All Agencies Dashboard
-            </button>
+          
           </div>
         </header>
 
