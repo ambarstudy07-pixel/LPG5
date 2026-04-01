@@ -142,15 +142,21 @@ export default function Home() {
               {/* OMC Name */}
               <div className="space-y-2">
                 <label className="block text-sm font-bold text-gray-700">OMC Name (IOCL/BPCL/HPCL)</label>
-                <input
-                  required
-                  type="text"
-                  name="omcName"
-                  placeholder="e.g. IOCL"
-                  value={formData.omcName}
-                  onChange={handleChange}
-                  className="w-full border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-50/50"
-                />
+                <div className="relative">
+                  <select
+                    required
+                    name="omcName"
+                    value={formData.omcName}
+                    onChange={handleChange}
+                    className="w-full border border-gray-200 rounded-lg px-4 py-3 appearance-none focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-50/50"
+                  >
+                    <option value="">Select OMC</option>
+                    <option value="IOCL">IOCL</option>
+                    <option value="BPCL">BPCL</option>
+                    <option value="HPCL">HPCL</option>
+                  </select>
+                  <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" />
+                </div>
               </div>
 
               {/* Grid of Cards */}
